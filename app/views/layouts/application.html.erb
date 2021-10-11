@@ -2,15 +2,83 @@
 <html>
   <head>
     <title>Dip1</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+<!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">TattooLine</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">New</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/posts/hp">HandPoke</a>
+        </li>
+         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/posts/bw">BlackWork</a>
+        </li>
+         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/posts/ns">NewSchool</a>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/posts/mao">Māori</a>
+        </li></li>
+        <li class="nav-item">
+          <a class="nav-link" href="/posts/pg">Paganism</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Supplies
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/posts/tm">Tattoo Machines</a></li>
+            <li><a class="dropdown-item" href="/posts/ti">Tattoo Inks</a></li>
+            <li><a class="dropdown-item" href="/posts/tnc">Tattoo Needles & Cartridgers</a></li>
+            <li><a class="dropdown-item" href="/posts/gtt">Grips Tips & Tubes</a></li>
+            <li><a class="dropdown-item" href="/posts/tps">Tattoo Power Supplies</a></li>
+            <li><a class="dropdown-item" href="/posts/ta">Tattoo Aftercare</a></li>
+            <li><a class="dropdown-item" href="/posts/me">Medical Equipment</a></li>
+          </ul>
+        </li>
+       <!-- 
+       <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      -->
+      <div>
+      </ul>
+      <button style="margin-right:20px" type="button" class="btn btn-outline-dark">Login</button>
+      <button style="margin-right:20px" type="button" class="btn btn-outline-danger">Register</button>
+      </div>
+    </div>
+  </div>
+</nav>
     <%= yield %>
+                
+                 <div class="col-sm-4">
+                 &nbsp;
+                 &nbsp;
+                    <!-- Side widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Side Widget</div>
+                        <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
+                    </div>
+                </div>
+            </div>
   </body>
 </html>
